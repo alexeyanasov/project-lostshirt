@@ -18,4 +18,4 @@ cd lostshirt
 Открыть index.html
 ```
 
-![alt text](marafon.jpg "Марафон по верстке от Loftschool")​
+![alt text](img/marafon.jpg "Марафон по верстке от Loftschool")​
