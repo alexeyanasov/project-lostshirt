@@ -7,6 +7,13 @@
 
 }
 
+:root{
+    --yellow: #ffc92f;
+    --red: #d82727;
+    --black: #1b1b1b;
+    --titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
+}
+
 html, body{
     height: 100%;
 }
@@ -26,15 +33,31 @@ body{
     min-width: 1310px;
 }
 
+.container{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul > li{
+    list-style: none;
+}
+
 .hero{
     height: 100vh;
     min-height: 650px;
-    background-color: #fdc436;
+    background-color: var(--yellow);
     background-image: url('../img/bg/hero.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+
+    margin-bottom: 130px;
 }
 
 .header{
@@ -57,8 +80,8 @@ body{
 }
 
 .mail__content{
-    background-color: #212121;
-    color: #ffbc2f;
+    background-color: var(--black);
+    color: var(--yellow);
     padding: 5px 10px;
 }
 
@@ -104,13 +127,13 @@ body{
 }
 
 .lined-text__word{
-    background-color: #000;
+    background-color: var(--black);
     padding: 0 17px 8px;
     margin-top: -7px;
 }
 
 .lined-text__word--color-yellow{
-    color: #ffbc2f;
+    color: var(--yellow);
 }
 
 /* каждый второй элемент текста */
@@ -118,6 +141,44 @@ body{
     margin-left: 8px; 
 }
 
+
+
+/* фильтр */
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.filter__item{
+    margin-right: 40px;
+}
+
+.filter__item:last-child{
+    margin-right: 0px;
+}
+
+.filter__link{
+    font-family: var(--titlesFont);
+    text-transform: uppercase;
+    padding: 3px 21px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: bold;
+
+    display: inline-block;
+    text-decoration: none;
+}
+
+.filter__link:hover{
+    color: var(--red);
+}
+
+.filter__item--active .filter__link{
+    color: var(--yellow);
+    background-color: var(--black);
+}
 
 @media(max-width:1310px){
     .header{
