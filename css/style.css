@@ -36,7 +36,8 @@ body{
 
 .container{
     margin: 0 auto;
-    width: 1300px;
+    width: 1440px;
+    /* width: 1200px; */
 }
 
 ul{
@@ -62,13 +63,345 @@ ul > li{
 }
 
 .header{
-    width: 1290px;
+    max-width: 1290px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 27px;
 }
+
+/* продукты */
+.header__image-pic {
+  position: absolute;
+  width: 18%;
+  top: 0%;
+}
+
+.products__header {
+  background: url('../img/bg/hero.jpg') center center / cover no-repeat;
+  margin-bottom: 90px;
+  width: 1645px;
+  padding: 21px;
+}
+
+/* ////// */
+.container__products {
+  width: 1105px;
+}
+.tsherts-choice {
+  display: flex;
+  border: 5px solid var(--yellow);
+  margin-bottom: 95px;
+}
+
+.tsherts-choice__col {
+  flex: 1;
+  position: relative;
+}
+
+.tsherts-choice__item {
+  background: var(--yellow);
+  position: absolute;
+  width: 548px;
+  height: 728px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tsherts-choice__img {
+  display: block;
+  max-width: 95%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.tsherts-opcions__brand {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: var(--titlesFont);
+  color: var(--yellow);
+}
+
+.tsherts-opcions__name {
+  color: var(--black);
+  font-size: 47px;
+  text-transform: uppercase;
+  font-family: var(--titlesFont);
+}
+
+.tsherts-opcions__price {
+    background: var(--yellow);
+    width: 95px;
+}
+.tsherts-opcions__price--amound {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--titlesFont);
+  color: #212121;
+  text-align: center;
+}
+
+.tsherts-opcions__info, .tsherts-opcions__about {
+  border-bottom: 2px solid #e0d9c8;
+  padding: 30px;
+}
+
+.tsherts-opcions__item {
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.tsherts-opcions__item:last-child {
+  margin-bottom: 0;
+}
+
+.tsherts-choice__btn {
+  font-size: 28px;
+  padding: 1px 70px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.tsherts-choice__size {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.size__btn input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.size__btn {
+  margin-right: 10px;
+}
+
+.size__btn:last-child {
+  margin-right: 0;
+}
+
+.size__btn-radio {
+  display: inline-block;
+  border: 1px solid #e0d9c8;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  height: 48px;
+  min-width: 48px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.size__btn-radio:hover {
+background-color: var(--yellow);
+}
+
+input[type="radio"]:checked+.size__btn-radio {
+  background-color: var(--yellow);
+}
+
+input[type="radio"]:disabled+.size__btn-radio {
+  color: #e0d9c8;
+}
+
+input[type="radio"]:disabled+.size__btn-radio:hover {
+  background-color:  initial;
+}
+
+.tsherts-choice__color {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.color__btn input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.color__btn {
+  margin-right: 20px;
+}
+
+.color__btn:last-child {
+  margin-right: 0;
+}
+
+.color__btn-radio {
+  display: inline-block;
+  border: 1px solid #e0d9c8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 25px;
+  min-width: 25px;
+  position: relative;
+}
+
+.color__btn-radio--black {
+  background-color: var(--black);
+}
+
+.color__btn-radio--white {
+  background-color: #fcf5e6;
+}
+.color__btn-radio--green {
+  background-color: #529029;
+}
+.color__btn-radio--blue {
+  background-color: #39498d;
+}
+.color__btn-radio--red {
+  background-color: var(--red);
+}
+
+.color__btn-radio:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  left: -7px;
+  bottom: -7px;
+}
+.color__btn-radio:hover:after {
+  border-color: var(--yellow);
+}
+.color__btn--checked {
+  border-color: var(--yellow);
+}
+
+.information {
+  margin-bottom: 90px;
+}
+.information__list {
+  position: relative;
+}
+.information__item {
+  display: flex;
+  border: 5px solid var(--yellow);
+  position: absolute;
+  background-color: #fcf5e6;
+}
+
+.information__item-col {
+  border-right: 2px solid #e0d9c8;
+}
+
+.information__item-col:last-child {
+  border-right: 0;
+}
+
+.information__item-col-right {
+  flex: 2;
+  padding: 45px;
+}
+
+.desc__item {
+  display: flex;
+  margin: 33px 45px;
+}
+
+.desc__item_pic {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.desc__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.desc__item_text {
+  font-size: 13px;
+}
+
+.delivery__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 75px;
+}
+
+
+.information__item-col--left {
+  flex-basis: 33%;
+}
+  
+.information__item-col--table {
+  flex: 2;
+}
+.size-table__image {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 27px;
+}
+
+.size-table__image-pic {
+  width: 80%;
+}
+
+.size-table__list {
+  font-size: 12px;
+
+}
+
+.size-table__desc {
+  width: 70%;
+  margin: auto;
+}
+.size-table__item {
+  margin-top: 10px;
+}
+
+.table-size {
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table-name {
+width: 18%;
+}
+
+
+td {
+  border: 1px solid #e0d9c8;
+  padding: 21px;
+  width: 10%;
+} 
+
+.table-name--color {
+  background-color: #e0d9c8;
+}
+
+.brand__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 75px;
+}
+
+
+.delivery__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 75px;
+}
+/* /продукты */
 
 .mail{
     text-decoration: none;
@@ -133,6 +466,7 @@ ul > li{
 .fade-slider__item--style-games .fade-slider__text {
     left: 50%;
     bottom: 0;
+    top: 80%;
     transform: translateX(-50%);
 }
 
@@ -145,9 +479,10 @@ ul > li{
 }
 
 .fade-slider__item--style-presents .fade-slider__text {
+    top: 63%;
     left: 0;
     bottom: 0;
-    transform: translateY(-120%);
+    /* transform: translateY(-120%); */
 }
 
 .fade-slider__item--style-presents .lined-text {
@@ -156,6 +491,8 @@ ul > li{
 
 .fade-slider__text {
     position: absolute;
+    left: 43%;
+    top: 6%;
 }
 
 .lined-text {
@@ -186,6 +523,9 @@ ul > li{
     margin-left: 8px; 
 }
 
+.lined-text--header{
+  font-size: 24px !important;
+}
 
 
 /* фильтр */
@@ -234,6 +574,7 @@ ul > li{
     display: flex;
     flex-wrap: wrap;
     margin-left: -27px;
+    left: 8%;
 }
 
 .products__item{
@@ -348,7 +689,9 @@ ul > li{
 }
 
 .collections__list{
+    position: relative;
     display: flex;
+    left: 4%;
 }
 
 .collections__item{
@@ -644,111 +987,4 @@ ul > li{
 
 .side-menu__link:hover{
     color: var(--red);
-}
-
-
-@media(max-width:1310px){
-    .header{
-        width: 1100px;
-    }
-
-    .wrapper{
-        min-width: 1100px;
-    }
-
-    .hero__content{
-        max-width: 800px;
-    }
-
-    .lined-text{
-        font-size: 50px;
-    }
-}
-
-
-@media(max-width:1120px){
-    .header{
-        width: 800px;
-    }
-    
-    .wrapper{
-        min-width: 800px;
-    }
-
-    .hero__content{
-        max-width: 600px;
-        top: 45%;
-    }
-
-    .lined-text{
-        font-size: 35px;
-    }
-}
-
-@media(max-width:830px){
-    .header{
-        width: 500px;
-    }
-    
-    .wrapper{
-        min-width: 500px;
-    }
-
-    .hero__content{
-        max-width: 500px;
-        top: 35%;
-    }
-
-    .lined-text{
-        font-size: 25px;
-    }
-
-    .logo__pic{
-        width: 70%;
-    }
-}
-
-@media(max-width:580px){
-    .header{
-        width: 300px;
-    }
-    
-    .wrapper{
-        min-width: 300px;
-    }
-
-    .hero__content{
-        top: 35%;
-    }
-
-    .lined-text{
-        font-size: 15px;
-    }
-
-    .logo{
-        margin-right: 50px;
-    }
-
-    .logo__pic{
-        width: 90%;
-    }
-}
-
-@media(max-width:460px){
-    .hero__content{
-        top: 28%;
-        max-width: 300px;
-    }
-
-    .lined-text{
-        font-size: 10px;
-    }
-
-    .mail{
-        font-size: 12px;
-    }
-
-    .lined-text__word{
-        padding: 0 8px 8px;
-    }
 }
